@@ -6,15 +6,20 @@
 //
 
 import SwiftUI
+import Genericsite
+import Oware
+
 
 struct ContentView: View {
-    @Binding var document: SitemainEditorDocument
+    @Binding var document: SitemainDocument
 
     var body: some View {
-        TextEditor(text: $document.text)
+        VStack {
+            MainView( $document.sitemain)
+        }
     }
 }
 
 #Preview {
-    ContentView(document: .constant(SitemainEditorDocument()))
+    ContentView(document: .constant(SitemainDocument(argent)))
 }

@@ -8,21 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		095C80812C8AF3AB00491B49 /* SitemainEditorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095C80802C8AF3AB00491B49 /* SitemainEditorApp.swift */; };
-		095C80832C8AF3AB00491B49 /* SitemainEditorDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095C80822C8AF3AB00491B49 /* SitemainEditorDocument.swift */; };
+		095C80832C8AF3AB00491B49 /* SitemainDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095C80822C8AF3AB00491B49 /* SitemainDocument.swift */; };
 		095C80852C8AF3AB00491B49 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095C80842C8AF3AB00491B49 /* ContentView.swift */; };
 		095C80872C8AF3AD00491B49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 095C80862C8AF3AD00491B49 /* Assets.xcassets */; };
 		095C808C2C8AF3AD00491B49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 095C808B2C8AF3AD00491B49 /* Preview Assets.xcassets */; };
+		095C80942C8AF40400491B49 /* Genericsite in Frameworks */ = {isa = PBXBuildFile; productRef = 095C80932C8AF40400491B49 /* Genericsite */; };
+		095C80972C8B0ABF00491B49 /* Oware in Frameworks */ = {isa = PBXBuildFile; productRef = 095C80962C8B0ABF00491B49 /* Oware */; };
+		095C80992C8B63B100491B49 /* extension Argent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095C80982C8B63B100491B49 /* extension Argent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		095C807D2C8AF3AB00491B49 /* SitemainEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SitemainEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		095C80802C8AF3AB00491B49 /* SitemainEditorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SitemainEditorApp.swift; sourceTree = "<group>"; };
-		095C80822C8AF3AB00491B49 /* SitemainEditorDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SitemainEditorDocument.swift; sourceTree = "<group>"; };
+		095C80822C8AF3AB00491B49 /* SitemainDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SitemainDocument.swift; sourceTree = "<group>"; };
 		095C80842C8AF3AB00491B49 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		095C80862C8AF3AD00491B49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		095C80882C8AF3AD00491B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		095C80892C8AF3AD00491B49 /* SitemainEditor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SitemainEditor.entitlements; sourceTree = "<group>"; };
 		095C808B2C8AF3AD00491B49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		095C80982C8B63B100491B49 /* extension Argent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension Argent.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +34,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				095C80942C8AF40400491B49 /* Genericsite in Frameworks */,
+				095C80972C8B0ABF00491B49 /* Oware in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +62,13 @@
 			isa = PBXGroup;
 			children = (
 				095C80802C8AF3AB00491B49 /* SitemainEditorApp.swift */,
-				095C80822C8AF3AB00491B49 /* SitemainEditorDocument.swift */,
+				095C80822C8AF3AB00491B49 /* SitemainDocument.swift */,
 				095C80842C8AF3AB00491B49 /* ContentView.swift */,
 				095C80862C8AF3AD00491B49 /* Assets.xcassets */,
 				095C80882C8AF3AD00491B49 /* Info.plist */,
 				095C80892C8AF3AD00491B49 /* SitemainEditor.entitlements */,
 				095C808A2C8AF3AD00491B49 /* Preview Content */,
+				095C80982C8B63B100491B49 /* extension Argent.swift */,
 			);
 			path = SitemainEditor;
 			sourceTree = "<group>";
@@ -90,6 +97,10 @@
 			dependencies = (
 			);
 			name = SitemainEditor;
+			packageProductDependencies = (
+				095C80932C8AF40400491B49 /* Genericsite */,
+				095C80962C8B0ABF00491B49 /* Oware */,
+			);
 			productName = SitemainEditor;
 			productReference = 095C807D2C8AF3AB00491B49 /* SitemainEditor.app */;
 			productType = "com.apple.product-type.application";
@@ -118,6 +129,10 @@
 				Base,
 			);
 			mainGroup = 095C80742C8AF3AB00491B49;
+			packageReferences = (
+				095C80922C8AF40400491B49 /* XCRemoteSwiftPackageReference "Genericsite" */,
+				095C80952C8B0ABF00491B49 /* XCRemoteSwiftPackageReference "Oware" */,
+			);
 			productRefGroup = 095C807E2C8AF3AB00491B49 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -145,8 +160,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				095C80812C8AF3AB00491B49 /* SitemainEditorApp.swift in Sources */,
-				095C80832C8AF3AB00491B49 /* SitemainEditorDocument.swift in Sources */,
+				095C80832C8AF3AB00491B49 /* SitemainDocument.swift in Sources */,
 				095C80852C8AF3AB00491B49 /* ContentView.swift in Sources */,
+				095C80992C8B63B100491B49 /* extension Argent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +387,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		095C80922C8AF40400491B49 /* XCRemoteSwiftPackageReference "Genericsite" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/oliveware/Genericsite";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		095C80952C8B0ABF00491B49 /* XCRemoteSwiftPackageReference "Oware" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/oliveware/Oware";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		095C80932C8AF40400491B49 /* Genericsite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 095C80922C8AF40400491B49 /* XCRemoteSwiftPackageReference "Genericsite" */;
+			productName = Genericsite;
+		};
+		095C80962C8B0ABF00491B49 /* Oware */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 095C80952C8B0ABF00491B49 /* XCRemoteSwiftPackageReference "Oware" */;
+			productName = Oware;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 095C80752C8AF3AB00491B49 /* Project object */;
 }
