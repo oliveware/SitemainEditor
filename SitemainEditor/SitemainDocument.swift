@@ -17,10 +17,12 @@ extension UTType {
 }
 
 struct SitemainDocument: FileDocument {
-    var argent:Argent
+    //var sitemain: Sitemain
+    var argent: Argent
     
-    init(_ argent) {
-        sitemain = site
+    init(_ sitemain:Sitemain) {
+        //self.sitemain = sitemain
+        argent = Argent(sitemain)
     }
 
   static var readableContentTypes: [UTType] { [.jsonText] }
@@ -35,7 +37,7 @@ struct SitemainDocument: FileDocument {
     }
     
    func fileWrapper(configuration: WriteConfiguration) throws -> FileWrapper {
-       let sitemain = Sitemain(argent)
+        let sitemain = Sitemain(argent)
         let json = try JSONEncoder().encode(sitemain)
        // let data = text.data(using: .utf8)!
         return .init(regularFileWithContents: json)

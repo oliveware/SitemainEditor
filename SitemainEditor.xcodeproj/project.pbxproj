@@ -14,7 +14,9 @@
 		095C808C2C8AF3AD00491B49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 095C808B2C8AF3AD00491B49 /* Preview Assets.xcassets */; };
 		095C80942C8AF40400491B49 /* Genericsite in Frameworks */ = {isa = PBXBuildFile; productRef = 095C80932C8AF40400491B49 /* Genericsite */; };
 		095C80972C8B0ABF00491B49 /* Oware in Frameworks */ = {isa = PBXBuildFile; productRef = 095C80962C8B0ABF00491B49 /* Oware */; };
-		095C80992C8B63B100491B49 /* extension Argent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095C80982C8B63B100491B49 /* extension Argent.swift */; };
+		096A64F22C9C26940069AD65 /* courant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096A64F12C9C26880069AD65 /* courant.swift */; };
+		096A64F42C9C26F30069AD65 /* epargne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096A64F32C9C26E40069AD65 /* epargne.swift */; };
+		096A64F62C9C26FD0069AD65 /* bourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096A64F52C9C26F70069AD65 /* bourse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +28,9 @@
 		095C80882C8AF3AD00491B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		095C80892C8AF3AD00491B49 /* SitemainEditor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SitemainEditor.entitlements; sourceTree = "<group>"; };
 		095C808B2C8AF3AD00491B49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		095C80982C8B63B100491B49 /* extension Argent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension Argent.swift"; sourceTree = "<group>"; };
+		096A64F12C9C26880069AD65 /* courant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = courant.swift; sourceTree = "<group>"; };
+		096A64F32C9C26E40069AD65 /* epargne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = epargne.swift; sourceTree = "<group>"; };
+		096A64F52C9C26F70069AD65 /* bourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bourse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 		095C807F2C8AF3AB00491B49 /* SitemainEditor */ = {
 			isa = PBXGroup;
 			children = (
+				096A64F02C9C26490069AD65 /* data */,
 				095C80802C8AF3AB00491B49 /* SitemainEditorApp.swift */,
 				095C80822C8AF3AB00491B49 /* SitemainDocument.swift */,
 				095C80842C8AF3AB00491B49 /* ContentView.swift */,
@@ -68,7 +73,6 @@
 				095C80882C8AF3AD00491B49 /* Info.plist */,
 				095C80892C8AF3AD00491B49 /* SitemainEditor.entitlements */,
 				095C808A2C8AF3AD00491B49 /* Preview Content */,
-				095C80982C8B63B100491B49 /* extension Argent.swift */,
 			);
 			path = SitemainEditor;
 			sourceTree = "<group>";
@@ -79,6 +83,16 @@
 				095C808B2C8AF3AD00491B49 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		096A64F02C9C26490069AD65 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				096A64F52C9C26F70069AD65 /* bourse.swift */,
+				096A64F32C9C26E40069AD65 /* epargne.swift */,
+				096A64F12C9C26880069AD65 /* courant.swift */,
+			);
+			path = data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,10 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				096A64F22C9C26940069AD65 /* courant.swift in Sources */,
 				095C80812C8AF3AB00491B49 /* SitemainEditorApp.swift in Sources */,
 				095C80832C8AF3AB00491B49 /* SitemainDocument.swift in Sources */,
+				096A64F42C9C26F30069AD65 /* epargne.swift in Sources */,
 				095C80852C8AF3AB00491B49 /* ContentView.swift in Sources */,
-				095C80992C8B63B100491B49 /* extension Argent.swift in Sources */,
+				096A64F62C9C26FD0069AD65 /* bourse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

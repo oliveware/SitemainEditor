@@ -20,14 +20,7 @@ struct SitemainEditorApp: App {
 
 
 
-let DO = Sitemain(
-    exergue :
-        "Comprendre - Respecter - Utiliser - Expliquer",
-    go: "retour ...",
-    titrage : ["Data", " ", "Opera"],
-    maxime: "La meilleure façon de prévoir le futur, c'est de l'inventer. Alan Kay",
-    accueil: "A la découverte de Data Opera"
-)
+
 
 let argent = Sitemain(
     exergue :
@@ -35,6 +28,30 @@ let argent = Sitemain(
     go: "retour ...",
     titrage : ["Grand", " ", "titre"],
     maxime: "exergue d'accueil",
-    accueil: "invitation à la suite"
+    accueil: "invitation à la suite",
+
+    intro: intro
 )
+let intro = Theme(
+    "Affaires à suivre","intro","parents",
+    "dernière mise à jour le 15 septembre 2024 à 14h27",
+    "tabord",
+    [
+        Rubric("comptes", "Comptes courants", "Comptes courants", "", "navigationcourant",
+               [
+                Topic("bp", "Banque postale", "Banque postale", "compte courant 1115372", "", Comptejson(BP)),
+                Topic("cm", "Crédit Mutuel", "Crédit Mutuel", "compte courant 00089303801", "", Comptejson(CM)),
+                Topic("sg", "Société générale", "Société générale", "compte courant 00050050428", "", Comptejson(SG))
+               ]
+              ),
+        Rubric("epargne", "Epargne", "Epargne", "", "navigationepargne",
+               []
+              ),
+        Rubric("bourse", "Bourse", "Bourse", "", "navigationbourse",
+               []
+              )
+    ]
+    
+)
+
 

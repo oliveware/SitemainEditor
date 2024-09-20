@@ -8,6 +8,7 @@
 import SwiftUI
 import Genericsite
 import Oware
+import Attribex
 
 
 struct ContentView: View {
@@ -15,7 +16,9 @@ struct ContentView: View {
 
     var body: some View {
         VStack {
-            MainView( $document.sitemain)
+            //MainView( $document.sitemain)
+            //CompteView($document.argent.courant[0].compte)
+            ArgentView($document.argent)
         }
     }
 }
